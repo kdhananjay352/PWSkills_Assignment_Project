@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    border-radius: 10px;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+ width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: white;
+    border-bottom: 2px solid #b70ec3;
+    line-height: 25px;;
+}
+
+nav .logo {
+    width: 15%;
+    border-right: 2px solid gray;
+    padding: 5px 16px;
+}
+nav .logo img{
+    width: 100px;
+    height: 30px;
+}
+
+nav .navbtn{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .navbtn button{
+    background-color: #b70ec3;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav .navbtn button:hover{
+    background-color: #fff;
+    color: #b70ec3;
+    border-radius: 5px 0px 5px 0px;
+    padding: 6px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Main Body CSS */
+
+main{
+    background-image: url("../assest/bg.png");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+main h1{
+    font-size: 55px;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    width:60%
+}
+main p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main .mainbtn button{
+    background-color: #b70ec3;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+main .mainbtn button:hover{
+    background-color: white;
+    color: #b70ec3;
+    border-radius: 10px 0px 10px 0px;
+    padding: 10px 40px;
+    font-weight: 600;
+    cursor: pointer;
+}
