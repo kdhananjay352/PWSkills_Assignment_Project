@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML AND CSS PROJECT 4 (MEDIA QUERY)</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+        }
+        .box1{
+            border-radius: 10px;
+            height: 500px;
+            width: 100%;
+            background-color: #08f5d5;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+            margin: 10px;
+            padding-top: 10px;
+        }
+        /* .box2{
+        border-radius: 10px;
+        height: 500px;
+        width: 800px;
+        background-color: #038a2c;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 10px;
+        padding-top: 10px;
+        }
+        .box3{
+        border-radius: 10px;
+        height: 500px;
+        width: 800px;
+        background-color: #8b7304;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 10px;
+        padding-top: 10px;
+        }
+        .box4{
+        border-radius: 10px;
+        height: 500px;
+        width: 800px;
+        background-color: #0ddbdb;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 10px;
+        padding-top: 10px;
+        }
+        .box5{
+        border-radius: 10px;
+        height: 500px;
+        width: 800px;
+        background-color: #df0c3ad5;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bolder;
+        margin: 10px;
+        padding-top: 10px;
+        } */
+        @media screen and (max-width: 1440px) {
+            .container{
+                display: flex;
+               
+
+            }
+            .box1{
+                background-color: #038a2c;
+                width: 1440px;
+            }
+            .box1::after{
+                content: "\a Screen size: 1440px";
+                white-space:pre;
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            .container{
+                display: flex;
+            }
+            .box1{
+                background-color: #8b7304;
+                width: 1024px;
+            }
+            .box1::after{
+                content: "\a Screen size: 1024px";
+                white-space:pre;
+                font-size: 14px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .container{
+                display: flex;
+            }
+            .box1{
+                background-color: #0ddbdb;
+                width: 768px;
+            }
+            .box1::after{
+                content: "\a Screen size: 768px";
+                white-space:pre;
+                font-size: 14px;
+            }
+        }
+        @media screen and (min-width: 425px) and (max-width: 768px) {
+            .container{
+                display: flex;
+            }
+            .box1{
+                background-color: #df0c3ad5;
+                width: 768px;
+            }
+            .box1::after{
+                content: "\a Screen size: 425px";
+                white-space:pre;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><div class="box1">This is a Media Query demo page.</div></div>
+    <!-- <div class="box2 contaner">This is a Media Query demo page.</div>
+    <div class="box3 contaner">This is a Media Query demo page.</div>
+    <div class="box4 contaner">This is a Media Query demo page.</div>
+    <div class="box5 contaner">This is a Media Query demo page.</div> -->
+</body>
+</html>
