@@ -67,15 +67,25 @@
         margin: 10px;
         padding-top: 10px;
         } */
-        @media screen and (max-width: 1440px) {
+        /* @media screen and (min-width > 1440px) {
             .container{
                 display: flex;
-               
+            }
+            .box1{
+                background-color: #08f5d5;
+            }
 
+        } */
+
+
+          /* Media query for 2 */
+        @media screen and  (max-width: 1440px)   {
+            .container{
+                display: flex;
             }
             .box1{
                 background-color: #038a2c;
-                width: 1440px;
+                /* width: 1440px; */
             }
             .box1::after{
                 content: "\a Screen size: 1440px";
@@ -83,13 +93,14 @@
                 font-size: 14px;
             }
         }
-        @media screen and (max-width: 1024px) {
+          /* Media query for 3 */
+        @media screen and (max-width: 1024px)  {
             .container{
                 display: flex;
             }
             .box1{
                 background-color: #8b7304;
-                width: 1024px;
+                /* width: 1024px; */
             }
             .box1::after{
                 content: "\a Screen size: 1024px";
@@ -97,13 +108,14 @@
                 font-size: 14px;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          /* Media query for 4 */
+        @media screen and  (max-width: 768px)  {
             .container{
                 display: flex;
             }
             .box1{
                 background-color: #0ddbdb;
-                width: 768px;
+                /* width: 768px; */
             }
             .box1::after{
                 content: "\a Screen size: 768px";
@@ -111,13 +123,14 @@
                 font-size: 14px;
             }
         }
-        @media screen and (min-width: 425px) and (max-width: 768px) {
+        /* Media query for 5 */
+        @media screen and (max-width: 425px)  {
             .container{
                 display: flex;
             }
             .box1{
                 background-color: #df0c3ad5;
-                width: 768px;
+                /* width: 425px; */
             }
             .box1::after{
                 content: "\a Screen size: 425px";
